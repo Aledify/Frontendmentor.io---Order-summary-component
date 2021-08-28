@@ -1,0 +1,98 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+a {
+  text-decoration: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 1.6rem; }
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  background-color: #e0e8ff;
+  box-sizing: border-box;
+  background-image: url(../img/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center; }
+
+.main-container {
+  max-width: 50rem;
+  min-height: 70rem;
+  background-color: #fff;
+  border-radius: 2rem; }
+  .main-container__top {
+    background-image: url(../img/illustration-hero.svg);
+    background-size: cover;
+    min-height: 22rem;
+    border-radius: 2rem 2rem 0 0; }
+  .main-container__bottom {
+    text-align: center;
+    padding: 5rem; }
+    .main-container__bottom__title {
+      font-weight: 700; }
+    .main-container__bottom__text {
+      opacity: 0.6;
+      font-size: 1.75rem;
+      padding: 1rem; }
+    .main-container__bottom__price {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 2rem 0 3rem 0;
+      background-color: #f8f9fe;
+      padding: 2rem;
+      border-radius: 1rem; }
+      .main-container__bottom__price .icon-music {
+        flex: 0 0 20%;
+        align-self: center;
+        transform: translateY(0.5rem); }
+      .main-container__bottom__price .annual-plan {
+        flex: 0 0 60%;
+        text-align: left;
+        padding-left: 1.5rem;
+        align-self: center; }
+      .main-container__bottom__price .change {
+        flex: 0 0 20%;
+        align-self: center; }
+        .main-container__bottom__price .change a {
+          color: #382ae1;
+          font-weight: 600;
+          transition: 0.5s all; }
+          .main-container__bottom__price .change a:hover {
+            color: #766cf1; }
+    .main-container__bottom .btn-payment {
+      background-color: #382ae1;
+      padding: 1.7rem;
+      border-radius: 1rem;
+      box-shadow: 0rem 1rem 1rem 0rem #e0e8ff;
+      transition: 0.5s all; }
+      .main-container__bottom .btn-payment:hover {
+        background-color: #766cf1;
+        transform: scale(1.01); }
+      .main-container__bottom .btn-payment > * {
+        color: #fff;
+        font-weight: 600; }
+    .main-container__bottom .cancel a {
+      font-weight: 600;
+      opacity: 0.6;
+      margin-top: 2rem;
+      color: #000;
+      display: block;
+      transition: 0.5s all; }
+      .main-container__bottom .cancel a:hover {
+        opacity: 1; }
